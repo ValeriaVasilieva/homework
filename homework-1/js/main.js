@@ -18,7 +18,6 @@ const renderProduct = (item) =>
 
 const renderPage = (list) => {
   const productsList = list.map((item) => renderProduct(item)).join("");
-  console.log(productsList);
   document
     .querySelector(".main__products")
     .insertAdjacentHTML("afterbegin", productsList);
