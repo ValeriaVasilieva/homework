@@ -57,20 +57,20 @@ class ProductItem {
      </div>`;
   }
 
-  async addToBasket() {
-    const block = document.querySelector(this.container);
-    const itemInBasket = new CartItem(this.product);
-    block.insertAdjacentHTML("beforeend", itemInBasket.render());
+//   async addToBasket() {
+//     const block = document.querySelector(this.container);
+//     const itemInBasket = new CartItem(this.product);
+//     block.insertAdjacentHTML("beforeend", itemInBasket.render());
 
-    //   return await fetch(`${API}/addToBasket.json`, {
-    //     method: "POST",
-    //     data: JSON.stringify(product),
-    //   })
-    //     .then((result) => console.log(result.status))
-    //     .catch((error) => {
-    //       console.log(error);
-    //     });
-  }
+//     //   return await fetch(`${API}/addToBasket.json`, {
+//     //     method: "POST",
+//     //     data: JSON.stringify(product),
+//     //   })
+//     //     .then((result) => console.log(result.status))
+//     //     .catch((error) => {
+//     //       console.log(error);
+//     //     });
+//   }
 }
 
 class Cart {
