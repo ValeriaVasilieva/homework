@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form action="#" class="form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="Тname" />
+      <label for="tel">Tel</label>
+      <input type="text" id="tel" name="tel" />
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" />
+      <button type="submit">Submit</button>
+    </form>
+    <p class="error-message"></p>
+  </body>
+  <script>
+    const form = document.forms[0];
+
+    form.addEventListener("submit", (e) => validate(e));
+
+    function validate(e) {
+      e.preventDefault();
+      const name = form.elements.name;
+      const tel = form.elements.tel;
+      const email = form.elements.email;
+      const error = document.querySelector(".error");
+      let message = [];
+
+      for (elem of form.elements) {
+        elem.classList.remove("error");
+        document.querySelector(".error-message").innerHTML = "";
+      }
+
+      if (!name.value.match(/^[а-яёa-z]+$/i)) {
+        name.classList.add("error");
+        message.push("Неправильно введено имя");
+      }
+      if (!tel.value.match(/^[0-9-:]+$/i)) {
+        tel.classList.add("error");
+        message.push("Неверный номер телефона");
+      }
+      if (!email.value.match(/^[a-z0-9._]+@[a-z0-9]+\.[a-z]{2,}/i)) {
+        email.classList.add("error");
+        message.push("Неверный email");
+      }
+
+      if (message.length >= 1) {
+        message.forEach((text) => {
+          document
+            .querySelector(".error-message")
+            .insertAdjacentHTML(
+              "beforeend",
+              `<p class="error-text">${text}</p>`
+            );
+        });
+      } else {
+        document
+          .querySelector(".error-message")
+          .insertAdjacentHTML("beforeend", `<p>Все заполнено верно</p>`);
+      }
+    }
+  </script>
+</html>

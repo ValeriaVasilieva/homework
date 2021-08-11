@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header {
+  height: 50px;
+  background: #ffdae0;
+}
+
+.header__content {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__button {
+  font-size: 18px;
+  width: 120px;
+  height: 30px;
+  border: 1px solid #ff5a77;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.main__content {
+  padding: 30px 0;
+}
+
+.main__products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__item {
+  margin: 15px;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+.main__item-info {
+  padding: 10px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__button {
+  width: 100%;
+  border: none;
+  height: 25px;
+  cursor: pointer;
+  background-color: pink;
+}
+
+.main__price::after {
+  content: "\20BD";
+  padding-left: 5px;
+}
+
+.footer {
+  height: 50px;
+  background: #ff8da1;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+}
+
+.footer__text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  font-size: 15px;
+}
+/*# sourceMappingURL=styles.css.map */
