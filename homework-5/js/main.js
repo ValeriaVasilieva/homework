@@ -9,8 +9,8 @@ const app = new Vue({
     filterProducts: [],
     cartProducts: [],
     userSearch: "",
-    show: false,
     searchLine: "",
+    showCart: false,
   },
   methods: {
     getJson(url) {
@@ -43,9 +43,6 @@ const app = new Vue({
         product.product_name.toLowerCase().includes(this.searchLine)
       );
     },
-    showCart() {
-      this.show = !this.show;
-    },
   },
   mounted() {
     this.getJson(`${API + this.catalogUrl}`).then((data) => {
@@ -55,9 +52,9 @@ const app = new Vue({
       }
     });
     this.getJson(`getProducts.json`).then((data) => {
-      for (let el of data) {
-        this.products.push(el);
-        this.filterProducts.push(el);
+      for (let item of data) {
+        this.$data.products.push(item);
+        this.$data.filtered.push(item);
       }
     });
     this.getJson(`${API + "/getBasket.json"}`).then((data) => {
