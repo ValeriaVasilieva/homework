@@ -1,0 +1,15 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  justify-content: space-between;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error-text {
+  color: red;
+}

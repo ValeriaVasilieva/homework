@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header {
+  height: 100px;
+  background: #ef8bef;
+}
+
+.header__content {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: white;
+}
+
+.header__button {
+  font-size: 18px;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+  color: gray;
+}
+
+.header__button:hover {
+  color: #e228e2;
+  border: 1px solid #e228e2;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.form__products {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.form__topings {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__checkbox {
+  margin: 10px;
+}
+
+.form__button {
+  font-size: 18px;
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+  color: gray;
+  border: 1px solid #e228e2;
+}
+
+.form__button:hover {
+  color: #e228e2;
+  border: 1px solid #e228e2;
+}
+
+.form__price {
+  padding-left: 20px;
+  font-size: 16px;
+  color: violet;
+}
+
+.result {
+  padding: 20px 0;
+}
+
+.footer {
+  height: 100px;
+  background: #e855e8;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+}
+
+.footer__text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  font-size: 18px;
+}
+/*# sourceMappingURL=styles.css.map */
