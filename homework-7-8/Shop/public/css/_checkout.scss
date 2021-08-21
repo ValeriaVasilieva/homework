@@ -1,0 +1,136 @@
+
+
+.checkout-content {
+    padding: 90px 0;
+}
+
+.accordion-collapse {
+    padding: 20px 45px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-header {
+    font-size: 16px;
+    line-height: 70px;
+    font-weight: 700;
+    background-color: white;
+    text-transform: uppercase;
+    color: #222222;
+    border: 1px solid transparent;
+    text-align: left;
+    width: 100%;
+
+    &:hover {
+        color: $main-color;
+    }
+}
+
+.accordion-header {
+    width: 100%;  
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+
+    &__mg {
+        margin-bottom: 15px;
+    }
+
+    &__bottom {
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+.checkout-text {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222222;
+
+    &_smaller {
+        font-size: 12px;
+    }
+
+    &_star:after {
+        content: '*';
+        color: #ff0d0d;
+        padding-left: 2px;
+    }
+}
+
+.checkout-paragraph {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #b3b2b2;
+
+    &_red {
+        color: #ff0d0d;
+    }
+}
+
+.checkout-link {
+    text-decoration: none;
+
+    &:before {
+        content: '>>';
+        padding-right: 10px;
+    }
+
+    &:hover {
+        color: $main-color;
+    }
+}
+
+.password-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 400;
+    color: #222222;
+    margin-left: 50px;
+
+    &:hover {
+        color: $main-color;
+    }
+}
+
+.checkout-submit {
+    width: 180px;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+
+    &:hover {
+        background-color: $main-color;
+        color: white;
+    }
+}
+
+.checkout-input {
+    padding-left: 15px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #222222;
+    outline: none;
+    height: 45px;
+    max-width: 390px;
+    border: 1px solid #eaeaea;
+}
+
+.cart-box {
+    z-index: 50;
+    width: 300px !important;
+  }

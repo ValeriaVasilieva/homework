@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "T-short",
+    "price": 29.99,
+    "img": "img/featured_item1.png"
+  },
+  {
+    "id": 2,
+    "title": "Top",
+    "price": 12.0,
+    "img": "img/featured_item2.png"
+  },
+  {
+    "id": 3,
+    "title": "Coat",
+    "price": 49.99,
+    "img": "img/featured_item3.png"
+  },
+  {
+    "id": 4,
+    "title": "Blouse",
+    "price": 15.0,
+    "img": "img/featured_item4.png"
+  },
+  {
+    "id": 5,
+    "title": "Top",
+    "price": 35.0,
+    "img": "img/featured_item5.png"
+  },
+  {
+    "id": 6,
+    "title": "Jacket",
+    "price": 56.99,
+    "img": "img/featured_item6.png"
+  },
+  {
+    "id": 7,
+    "title": "Trousers",
+    "price": 45.0,
+    "img": "img/featured_item7.png"
+  },
+  {
+    "id": 8,
+    "title": "Сardigan",
+    "price": 40.99,
+    "img": "img/featured_item8.png"
+  }
+]

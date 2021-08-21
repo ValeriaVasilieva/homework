@@ -1,0 +1,16 @@
+[
+    {
+        "quantity": 2,
+        "id": 2,
+        "title": "Top",
+        "price": 12,
+        "img": "img/featured_item2.png"
+    },
+    {
+        "quantity": 1,
+        "id": 3,
+        "title": "Coat",
+        "price": 49.99,
+        "img": "img/featured_item3.png"
+    }
+]
